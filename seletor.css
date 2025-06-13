@@ -1,0 +1,5 @@
+a {color:blue;}
+a[href^="#"] {color:red;}
+a[href*="google"] {color:gray;}
+a[href$="br"] {color:purple;}
+
