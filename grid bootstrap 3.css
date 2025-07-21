@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.col-1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 10px;
+    left: 20px;
+    position: absolute;
+}
+
+.button-custom {
+    position: absolute;
+    top: 20px;
+    left: 90%;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
