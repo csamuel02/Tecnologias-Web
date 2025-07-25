@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feira do Produtor Rural</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --verde-primario: #2E8B57;
+            --verde-secundario: #3CB371;
+            --verde-claro: #90EE90;
+            --bege: #F5F5DC;
+            --marrom: #8B4513;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F8F9FA;
+        }
+        
+        .header-feira {
+            background-color: var(--verde-primario);
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 40px;
+            border-radius: 0 0 20px 20px;
+        }
+        
+        .card-produto {
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 100, 0, 0.1);
+            border: 1px solid rgba(46, 139, 87, 0.2);
+        }
+        
+        .card-produto:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(46, 139, 87, 0.2);
+        }
+        
+        .icone-setor {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--verde-primario);
+        }
+        
+        .btn-feira {
+            transition: all 0.3s ease;
+            border-radius: 50px;
+            padding: 8px 20px;
+            font-weight: 500;
+            background-color: var(--verde-primario);
+            color: white;
+            border: none;
+        }
+        
+        .btn-feira:hover {
+            background-color: var(--verde-secundario);
+            transform: scale(1.05);
+            color: white;
+        }
+        
+        .badge-organico {
+            background-color: var(--verde-primario);
+            color: white;
+        }
+        
+        .produtor-info {
+            font-size: 0.9rem;
+            color: var(--marrom);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-feira text-center">
+        <div class="container">
+            <i class="bi bi-basket2-fill display-4 mb-3"></i>
+            <h1 class="display-5 fw-bold mb-3">Feira do Produtor Rural</h1>
+            <p class="lead">Produtos frescos diretamente do agricultor para sua mesa</p>
+        </div>
+    </div>
+
+
+    <div class="container py-5">
+        <div class="row g-4">
+     
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card card-produto p-4 text-center">
+                    <i class="fa-solid fa-carrot icone-setor"></i>
+                    <h3>Hortifrúti Natural</h3>
+                 
+                    <p class="text-muted">Verduras, legumes e frutas frescas colhidas diariamente</p>
+                    <div class="produtor-info mb-3">
+                        <i class="bi bi-person-circle"></i> Família Oliveira - Sítio São José
+                    </div>
+                    <span class="badge badge-organico mb-3">100% ORGÂNICO</span>
+                    <span class="badge badge-organico mb-3"><i class="bi bi-leaf me-1"></i> 100% ORGÂNICO</span>
+                    <a href="#" class="btn btn-feira mt-auto">
+                        <i class="bi bi-cart-plus"></i> Visitar Barraca
+                    </a>
+                </div>
+            </div>
+            
+            
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card card-produto p-4 text-center">
+                    <i class="bi bi-cup-hot icone-setor"></i>
+                    <h3>Laticínios Artesanais</h3>
+                    <p class="text-muted">Queijos, iogurtes e manteiga produzidos tradicionalmente</p>
+                    <div class="produtor-info mb-3">
+                        <i class="bi bi-person-circle"></i> Fazenda Boa Esperança
+                    </div>
+                    <span class="badge badge-organico mb-3">PRODUTO LOCAL</span>
+                    <a href="#" class="btn btn-feira mt-auto">
+                        <i class="bi bi-cart-plus"></i> Visitar Barraca
+                    </a>
+                </div>
+            </div>
+            
+        
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card card-produto p-4 text-center">
+                    <i class="fa-solid fa-bread-slice icone-setor"></i>
+                    <h3>Padaria Caseira</h3>
+                    <p class="text-muted">Pães, bolos e biscoitos feitos com ingredientes naturais</p>
+                    <div class="produtor-info mb-3">
+                        <i class="bi bi-person-circle"></i> Dona Maria - Forno de Minas
+                    </div>
+                    <span class="badge badge-organico mb-3">FEITO NA HORA</span>
+                    <span class="badge badge-organico mb-3"><i class="bi bi-leaf me-1"></i> FEITO NA HORA</span>
+                    <a href="#" class="btn btn-feira mt-auto">
+                        <i class="bi bi-cart-plus"></i> Visitar Barraca
+                    </a>
+                </div>
+            </div>
+            
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card card-produto p-4 text-center">
+                    <i class="bi bi-flower1 icone-setor"></i>
+                    <h3>Mel e Derivados</h3>
+                    <p class="text-muted">Mel puro, própolis e produtos apícolas de qualidade</p>
+                    <div class="produtor-info mb-3">
+                        <i class="bi bi-person-circle"></i> Apiário Abelha Dourada
+                    </div>
+                    <span class="badge badge-organico mb-3">SELO DE QUALIDADE</span>
+                    <a href="#" class="btn btn-feira mt-auto">
+                        <i class="bi bi-cart-plus"></i> Visitar Barraca
+                    </a>
+                </div>
+            </div>
+            
+     
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card card-produto p-4 text-center">
+                    <i class="bi bi-cup-straw icone-setor"></i>
+                    <h3>Café Especial</h3>
+                    <p class="text-muted">Café gourmet torrado artesanalmente</p>
+                    <div class="produtor-info mb-3">
+                        <i class="bi bi-person-circle"></i> Sítio Café Bom
+                    </div>
+                    <span class="badge badge-organico mb-3">PRÊMIOS INTERNACIONAIS</span>
+                    <a href="#" class="btn btn-feira mt-auto">
+                        <i class="bi bi-cart-plus"></i> Visitar Barraca
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card card-produto p-4 text-center">
+                    <i class="bi bi-basket icone-setor"></i>
+                    <h3>Artesanato Rural</h3>
+                    <p class="text-muted">Trabalhos manuais com materiais naturais</p>
+                    <div class="produtor-info mb-3">
+                        <i class="bi bi-person-circle"></i> Grupo Mãos da Terra
+                    </div>
+                    <span class="badge badge-organico mb-3">FEITO À MÃO</span>
+                    <a href="#" class="btn btn-feira mt-auto">
+                        <i class="bi bi-cart-plus"></i> Visitar Barraca
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+   
+        <footer class="mt-5 pt-5 text-center text-muted">
+            <p>Feira do Produtor Rural - Todo sábado das 7h às 13h</p>
+            <p>Praça Central - Entrada Franca</p>
+            <div class="d-flex justify-content-center gap-3 mb-3">
+                <a href="#" class="text-success"><i class="bi bi-facebook fs-4"></i></a>
+                <a href="#" class="text-success"><i class="bi bi-instagram fs-4"></i></a>
+                <a href="#" class="text-success"><i class="bi bi-whatsapp fs-4"></i></a>
+            </div>
+            <p>© 2023 Feira do Produtor Rural. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

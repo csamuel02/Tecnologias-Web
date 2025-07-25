@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3 - Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        .hero-section {
+            background-color: #94e06e;
+            padding: 80px 0;
+        }
+        .card {
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #343a40;
+            color: rgba(53, 49, 49, 0.107);
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <h3 class="m-0">FIT</h3>
+                </div>
+                <nav class="d-none d-md-block">
+                    <ul class="d-flex list-unstyled mb-0">
+                        <li class="mx-3"><a href="#" class="text-decoration-none">Home</a></li>
+                        <li class="mx-3"><a href="#" class="text-decoration-none">Sobre</a></li>
+                        <li class="mx-3"><a href="#" class="text-decoration-none">Serviços</a></li>
+                        <li class="mx-3"><a href="#" class="text-decoration-none">Contato</a></li>
+                    </ul>
+                </nav>
+                <button class="btn btn-primary d-none d-md-block">Login</button>
+                <button class="btn btn-primary d-md-none">Menu</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                    <h1>Academia Funcional</h1>
+                    <p class="lead">Descubra nossos incríveis produtos e serviços que vão transformar sua experiência.</p>
+                    <button class="btn btn-primary btn-lg">Saiba mais</button>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                    <img src="fit.jpg" alt="Hero Image" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nossos Serviços</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="d-flex justify-content-center align-items-center" style="height:120px;">
+                            <span style="background:#e9ecef; border-radius:50%; width:80px; height:80px; display:flex; align-items:center; justify-content:center; font-size:2.5rem;">
+                                <i class="bi bi-award"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Trainer</h5>
+                            <p class="card-text">Acompanhamento individualizado com um profissional que monta treinos personalizadoS.
+
+.</p>
+                            <a href="#" class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="d-flex justify-content-center align-items-center" style="height:120px;">
+                            <span style="background:#e9ecef; border-radius:50%; width:80px; height:80px; display:flex; align-items:center; justify-content:center; font-size:2.5rem;">
+                                <i class="bi bi-flag"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Aulas de Pilates</h5>
+                            <p class="card-text">Exercícios de baixo impacto focados na força do core, flexibilidade e postura. </p>
+                            <a href="#" class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="d-flex justify-content-center align-items-center" style="height:120px;">
+                            <span style="background:#e9ecef; border-radius:50%; width:80px; height:80px; display:flex; align-items:center; justify-content:center; font-size:2.5rem;">
+                                <i class="bi bi-trophy"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Treinamento Funcional</h5>
+                            <p class="card-text">Atividades que simulam movimentos do dia a dia, como agachar, empurrar e girar, combinando força, resistência e equilíbrio.</p>
+                            <a href="#" class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="d-flex justify-content-center align-items-center" style="height:120px;">
+                            <span style="background:#e9ecef; border-radius:50%; width:80px; height:80px; display:flex; align-items:center; justify-content:center; font-size:2.5rem;">
+                                <i class="bi bi-activity"></i>
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Avaliação Física</h5>
+                            <p class="card-text">Serviço realizado por um profissional da área para medir composição corporal (gordura, massa muscular, etc.), flexibilidade e condicionamento, permitindo acompanhar a evolução e adaptar os treinos.</p>
+                            <a href="#" class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h4>Redes Sociais</h4>
+                    <div class="d-flex mt-3">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i> Facebook</a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i> Instagram</a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter"></i> Twitter</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4>Links Rápidos</h4>
+                    <ul class="list-unstyled mt-3">
+                        <li><a href="#" class="text-white text-decoration-none">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Termos de Serviço</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Suporte</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-3 border-top">
+                <p class="mb-0">© 2023 Minha Empresa. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
